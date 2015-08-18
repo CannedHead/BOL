@@ -1,7 +1,36 @@
+html, body{
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+p{
+	color:#838383;
+}
+
+.img-responsive{
+	width: 100%;
+}
 .no-padding{
 	padding-left:0;
 	padding-right:0;
 }
+
+.logo-container{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d6d6d6+0,ffffff+50,d6d6d6+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(left,  #ffffff 0%, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(0%,#d6d6d6), color-stop(50%,#ffffff), color-stop(100%,#d6d6d6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #ffffff 0%,#d6d6d6 0%,#ffffff 50%,#d6d6d6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #ffffff 0%,#d6d6d6 0%,#ffffff 50%,#d6d6d6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #ffffff 0%,#d6d6d6 0%,#ffffff 50%,#d6d6d6 100%); /* IE10+ */
+	background: linear-gradient(to right,  #ffffff 0%,#d6d6d6 0%,#ffffff 50%,#d6d6d6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=1 ); /* IE6-9 */
+}
+
+.navbar{
+	margin-bottom:0;
+	min-height: 30px;
+}
+
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
@@ -11,7 +40,60 @@
     text-align: center;
 }
 
+.nav > li > a{
+	padding: 2px 20px 0px;
+	margin-left: 40px;
+	margin-right: 40px;
+	font-weight: 400;
+	font-size: 1.1em;
+	letter-spacing: 0.07em;
+	color:#FFF;
+}
+
 .footer{
 	color:#FFF;
 	background-color: #333333;
+}
+
+.footer p{
+	font-weight: lighter;
+	font-size: 1.1em;
+	letter-spacing: 0.07em;
+	margin: 0 auto 2px;
+}
+
+.carousel.carrousel-index {
+    padding-bottom: 60px;
+}
+
+.carrousel-index .carousel-indicators{
+	background-color: #1A1A1A;
+	bottom:0;
+	margin-bottom: 0px;
+	padding: 20px 0;
+	left: 30%;
+	width: 100%;
+}
+
+.carrousel-index .carousel-caption{
+	bottom:32%;
+	font-weight: 500;
+	font-size: 5em;
+	text-shadow: -4px 4px 0px rgba(0, 0, 0, 1);
+}
+
+.services_title{
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.services_title h1{
+	position:absolute;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	color:#FFF;
+	margin-bottom: 0;
+	padding: 2px 36px 2px 18px;
+	font-weight: 400;
 }
