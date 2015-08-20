@@ -1,9 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Muli:400,300);
+
+* {
+  margin: 0;
+}
+
 html, body{
-	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-family: 'Muli', sans-serif;
+	height: 100%;
 }
 
 p{
 	color:#838383;
+}
+
+ul{
+	list-style-type: circle;
 }
 
 .img-responsive{
@@ -12,6 +23,10 @@ p{
 .no-padding{
 	padding-left:0;
 	padding-right:0;
+}
+
+.silver_border{
+	border-left:1px solid #CCC;
 }
 
 .logo-container{
@@ -50,6 +65,10 @@ p{
 	color:#FFF;
 }
 
+.footer-margin{
+	margin-top: 50px;
+}
+
 .footer{
 	color:#FFF;
 	background-color: #333333;
@@ -82,6 +101,10 @@ p{
 	text-shadow: -4px 4px 0px rgba(0, 0, 0, 1);
 }
 
+.img-quienes-somos{
+	margin-top:50px;
+}
+
 .services_title{
 	position: relative;
 	margin-bottom: 50px;
@@ -96,4 +119,18 @@ p{
 	margin-bottom: 0;
 	padding: 2px 36px 2px 18px;
 	font-weight: 400;
+}
+
+.services_ul{
+	margin-left: -25px;
+	color: #838383;
+}
+
+.proyectos{
+	margin-top:60px;
+	margin-bottom:60px;
+}
+
+.proyecto{
+
 }
