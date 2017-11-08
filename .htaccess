@@ -1,0 +1,12 @@
+
+RewriteEngine On 
+RewriteRule ^quienes-somos$ quienes-somos.html [NC,L]
+RewriteRule ^servicios$ servicios.html [NC,L]
+RewriteRule ^servicios/construccion$ construccion.html [NC,L]
+RewriteRule ^servicios/diseno$ diseno.html [NC,L]
+RewriteRule ^servicios/maquinaria$ maquinaria.html [NC,L]
+RewriteRule ^servicios/interventoria$ interventoria.html [NC,L]
+RewriteRule ^proyectos/infovisual$ infovisual.html [NC,L]
+RewriteRule ^proyectos$ proyectos.html [NC,L]
+RewriteRule ^proyecto$ proyecto.html [NC,L]
+RewriteRule ^contactenos$ contactenos.html [NC,L] 

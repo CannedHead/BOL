@@ -39,6 +39,7 @@ ul{
 	background: -ms-linear-gradient(left,  #ffffff 0%,#d6d6d6 0%,#ffffff 50%,#d6d6d6 100%); /* IE10+ */
 	background: linear-gradient(to right,  #ffffff 0%,#d6d6d6 0%,#ffffff 50%,#d6d6d6 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=1 ); /* IE6-9 */
+	padding:7px 100px;
 }
 
 .navbar{
@@ -66,7 +67,7 @@ ul{
 }
 
 .footer-margin{
-	margin-top: 50px;
+	margin-top: 70px;
 }
 
 .footer{
@@ -79,6 +80,10 @@ ul{
 	font-size: 1.1em;
 	letter-spacing: 0.07em;
 	margin: 0 auto 2px;
+	color:#DDD;
+}
+.carousel-indicators {
+    bottom: -45px;
 }
 
 .carousel.carrousel-index {
@@ -117,7 +122,7 @@ ul{
 	background-color: rgba(0,0,0,0.5);
 	color:#FFF;
 	margin-bottom: 0;
-	padding: 2px 36px 2px 18px;
+	padding: 4px 36px 4px 18px;
 	font-weight: 400;
 }
 
@@ -127,10 +132,81 @@ ul{
 }
 
 .proyectos{
-	margin-top:60px;
-	margin-bottom:60px;
+	margin-top:70px;
+	margin-bottom:70px;
+}
+
+.proyectos h2{
+	text-decoration: underline;
 }
 
 .proyecto{
-
+	position:relative;
 }
+
+.proyecto h2{
+	background-color: rgba(0,0,0,0.8);
+	color:#FFF;
+	position: absolute;
+	top:50%;
+	width:90.3%;
+	margin-top:-16px;
+	padding: 10px 0;
+}
+
+.servicios{
+	margin-top:8.5%;
+	margin-bottom:8.5%;
+}
+
+.servicio{
+	position:relative;
+}
+
+.servicio h2{
+	background-color: rgba(0,0,0,0.8);
+	color:#FFF;
+	position: absolute;
+	top:50%;
+	width:88.4%;
+	margin-top:-16px;
+	padding: 10px 0;
+}
+
+
+/*CARROUSEL*/
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+	width:20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+}
+

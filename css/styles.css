@@ -1,0 +1,487 @@
+@import url(http://fonts.googleapis.com/css?family=Muli:400,300);
+
+* {
+  margin: 0;
+}
+
+html, body{
+	font-family: 'Muli', sans-serif;
+	height: 100%;
+}
+
+p{
+	color:#838383;
+}
+
+a, a:hover, a:focus, a:active{
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: circle;
+}
+
+.img-responsive{
+	width: 100%;
+}
+.no-padding{
+	padding-left:0;
+	padding-right:0;
+}
+
+.silver_border{
+	border-left:1px solid #CCC;
+}
+
+.logo-container{
+	padding-top:10px;
+	padding-bottom: 10px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d6d6d6+0,ffffff+50,d6d6d6+100 */
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(left,  #ffffff 0%, #d6d6d6 0%, #ffffff 50%, #d6d6d6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(0%,#d6d6d6), color-stop(50%,#ffffff), color-stop(100%,#d6d6d6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #ffffff 0%,#d6d6d6 0%,#ffffff 50%,#d6d6d6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #ffffff 0%,#d6d6d6 0%,#ffffff 50%,#d6d6d6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #ffffff 0%,#d6d6d6 0%,#ffffff 50%,#d6d6d6 100%); /* IE10+ */
+	background: linear-gradient(to right,  #ffffff 0%,#d6d6d6 0%,#ffffff 50%,#d6d6d6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d6d6d6',GradientType=1 ); /* IE6-9 */
+}
+
+.navbar{
+	display:none;
+}
+
+
+/*=========== MENU ==========*/
+.menu-btn{
+	position:absolute;
+	background-color: #333;
+	height: 50px;
+	width:50px;
+	z-index:4;
+	right:0;
+}
+
+.menu-btn.fixed{
+	position:fixed;
+	top:0;
+}
+
+.menu{
+	position: absolute;
+	background-color:#333333;
+	color:#FFF;
+	width:100%;
+	height:85%;
+	top:139px;
+	z-index:90;
+	-webkit-transition: -webkit-transform .4s cubic-bezier(.16, .68, .43, .99);
+  	-moz-transition: -moz-transform .4s cubic-bezier(.16, .68, .43, .99);
+  	-o-transition: -o-transform .4s cubic-bezier(.16, .68, .43, .99);
+  	transition: transform .4s cubic-bezier(.16, .68, .43, .99);
+  	/* improves performance issues on mobile*/
+  	-webkit-backface-visibility: hidden;
+  	-webkit-perspective: 1000;
+  	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+.menu.fixed{
+	position:fixed;
+	top:50px;
+}
+
+.menu-options{
+	text-align: left;
+	margin:10% 0;
+}
+
+.menu-options >li {
+	margin-bottom: 3%;
+	margin-top: 5%;
+}
+
+.menu-options > li > a{
+	color:#F1F1F1;
+	font-size: 1.2em;
+	text-decoration: none;
+	letter-spacing: 0.08em;
+	-webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    font-weight: bold
+}
+
+.menu-options > li > a:hover,
+.menu-options > li > a:focus,
+.menu-options > li > a:active {
+	color:#FFF;
+}
+
+.submenu-options{
+	margin-bottom: 6%;
+}
+.submenu-options >li {
+	margin-left: 10px;
+}
+
+.submenu-options > li > a{
+	color:#F1F1F1;
+	font-size: 1.1em;
+	text-decoration: none;
+	letter-spacing: 0.08em;
+	-webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.menu-closed{
+  -webkit-transform: translate3d(100%,0,0);
+  -moz-transform: translate3d(100%,0,0);
+  -ms-transform: translate3d(100%,0,0);
+  -o-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+.menu-open{
+  -webkit-transform: translate3d(10%,0,0);
+  -moz-transform: translate3d(10%,0,0);
+  -ms-transform: translate3d(10%,0,0);
+  -o-transform: translate3d(10%,0,0);
+  transform: translate3d(10%,0,0);
+}
+
+.navbar-toggle {
+    padding: 8px 0px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #FFF;
+    width: 26px;
+	height: 3px;
+	border-radius: 5px;
+}
+
+.footer-margin{
+	margin-top: 70px;
+}
+
+.footer{
+	color:#FFF;
+	background-color: #333333;
+}
+
+.footer p{
+	font-weight: lighter;
+	font-size: 0.85em;
+	letter-spacing: 0.07em;
+	margin: 0 auto 2px;
+	color:#DDD;
+}
+
+.carousel-indicators {
+    bottom: -45px;
+}
+
+.carousel.carrousel-index {
+    padding-bottom: 60px;
+}
+
+.carrousel-index .carousel-indicators{
+	background-color: #1A1A1A;
+	bottom:0;
+	margin-bottom: 0px;
+	padding: 20px 0;
+	left: 30%;
+	width: 100%;
+}
+
+.carrousel-index .carousel-caption{
+	bottom:32%;
+	font-weight: 500;
+	font-size: 5em;
+	text-shadow: -4px 4px 0px rgba(0, 0, 0, 1);
+}
+
+.index_mob{
+	margin-top: 50px;
+}
+
+.index_mob img{
+	border:3px solid #FFF;
+}
+
+.index_mob h2{
+	color:#FFF;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.index_mob_layer{
+	position: fixed;
+	width:100%;
+	height:175%;
+	background-color: rgba(0,0,0,0.5);
+	z-index:-1;
+}
+
+.index_mob_img{
+	position:fixed;
+	z-index:-2;
+	width:100%;
+	height:175%;
+	background: url(https://s3.amazonaws.com/cannedhead.bol/slider-home-1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.img-quienes-somos{
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+.services_title{
+	position: relative;
+	margin-bottom: 5px;
+}
+
+.services_title h1{
+	position:absolute;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	color:#FFF;
+	margin-bottom: 0;
+	padding: 4px 36px 4px 18px;
+	font-size: 1.4em;
+}
+
+.quienes-somos-title{
+	font-size: 1.2em;
+}
+
+.services_ul{
+	margin-left: -25px;
+	color: #838383;
+}
+
+
+.proyectos{
+	margin-top:70px;
+	margin-bottom:70px;
+}
+
+.proyectos h2{
+	text-decoration: underline;
+}
+
+.proyecto{
+	position:relative;
+}
+
+.proyecto h2{
+	background-color: rgba(0,0,0,0.8);
+	color:#FFF;
+	position: absolute;
+	top:50%;
+	width:90.3%;
+	margin-top:-16px;
+	padding: 10px 0;
+}
+
+.servicios{
+	margin-top:8.5%;
+	margin-bottom:8.5%;
+}
+
+.servicio{
+	position:relative;
+	padding:5px;
+}
+
+.servicio h2{
+	position: absolute;
+	background-color: rgba(0,0,0,0.8);
+	color:#FFF;
+	top:50%;
+	margin-top:-16px;
+	width:100%;
+	left:0;
+	font-size:30px;
+}
+
+
+/*CARROUSEL*/
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
+.jcarousel ul {
+	width:20000em;
+    position: relative;
+
+    /* Optional, required in this case since it's a <ul> element */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
+.jcarousel li {
+    /* Required only for block elements like <li>'s */
+    float: left;
+}
+
+
+/*contactenos*/
+.contactenos-hero{
+	font-size:1.3em;
+	margin-bottom:30px;
+	margin-left: 15px;
+}
+
+.contactenos-formulario{
+	margin-bottom: 120px;
+}
+
+.contactenos-form .control-label{
+	font-size: 1.3em;
+	color: #838383;
+	font-weight: 400;
+	text-align: left;
+}
+
+.contactenos-form .form-control, .contactenos-form .form-control:active, .contactenos-form .form-control:focus, .contactenos-form .form-control:hover {
+	background-color: #E6E6E6;
+	border-color:#E6E6E6;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: none;
+}
+
+.comentarios{
+	padding-right:0;
+	margin-right: 0;
+	margin-top: 20px;
+}
+
+.comentarios-text{
+	margin-top: 33px;
+}
+
+.btn-contact,
+.btn-contact:active,
+.btn-contact:hover,
+.btn-contact:focus{
+	background-color: #008355;
+	color:#FFF;
+	margin-right: 17px;
+}
+
+@media (min-width: 768px) {
+
+	.navbar{
+		display:block;
+		margin-bottom:0;
+		min-height: 30px;
+	}
+
+	.navbar .navbar-nav {
+	    display: inline-block;
+	    float: none;
+	}
+
+	.navbar .navbar-collapse {
+	    text-align: center;
+	}
+
+	.nav > li > a{
+		padding: 2px 20px 0px;
+		margin-left: 40px;
+		margin-right: 40px;
+		font-weight: 400;
+		font-size: 1.1em;
+		letter-spacing: 0.07em;
+		color:#FFF;
+	}
+
+	.menu-btn{
+		display: none;
+	}
+	.menu{
+		display:none;
+	}
+
+	.carousel.carrousel-index {
+    	padding-bottom: 60px;
+	}
+
+	.footer p{
+		font-size: 1.1em;
+	}
+	
+	.services_title{
+		position: relative;
+		margin-bottom: 50px;
+	}
+
+	.services_title h1{
+		position:absolute;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,0.5);
+		color:#FFF;
+		margin-bottom: 0;
+		padding: 4px 36px 4px 18px;
+		font-weight: 400;
+		font-size: 36px;
+		left:auto;
+	}
+
+	.img-quienes-somos{
+		margin-top:67px;
+		margin-bottom: 0;
+	}
+
+	/*Servicios*/	
+	.servicio h2{
+		/*
+		top:50%;
+		width:88.4%;
+		margin-top:-16px;
+		padding: 10px 0;
+		font-size:30px;
+		*/
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}

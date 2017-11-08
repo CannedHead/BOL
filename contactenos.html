@@ -11,17 +11,56 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">Estas utilizando un navegador <strong>desactualizado</strong>. P <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div class="menu col-xs-12 menu-closed" id="off-canvas-menu">
+          <ul class="list-unstyled menu-options"> 
+              <li>
+                  <a href="/">Home</a>
+              </li>
+              <li>
+                  <a href="/quienes-somos">Quiénes Somos</a>
+              </li>
+              <li>
+                  <a href="/servicios">Servicios</a>
+                  <ul class="list-unstyled submenu-options">
+                    <li><a href="/servicios/construccion">Construcción</a></li>
+                    <li><a href="/servicios/diseno">Diseño</a></li>
+                    <li><a href="/servicios/maquinaria">Maquinaria</a></li>
+                    <li><a href="/servicios/interventoria">Interventoría</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="/proyectos">Proyectos</a>
+                  <ul class="list-unstyled submenu-options">
+                    <li><a href="/proyectos/finalizados">Finalizados</a></li>
+                    <li><a href="/proyectos/en-proceso">En Proceso</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a href="/contactenos">Contáctenos</a>
+              </li>
+          </ul>
+        </div>
         <div class="container-fluid">
           <div class="row logo-container">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
-              <img class="img-responsive col-xs-12" src="https://s3.amazonaws.com/cannedhead.bol/logo.svg">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+              <a href="/">
+                <img class="img-responsive col-xs-12" src="https://s3.amazonaws.com/cannedhead.bol/logo.svg">
+              </a>
             </div>
+          </div>
+          <div id="menu-btn" class="menu-btn toggle-menu">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>            
           </div>
           <div class="row">
             <nav class="navbar navbar-inverse">
@@ -46,46 +85,163 @@
             </nav>
           </div>
           <div class="row">
-            <div class="col-xs-6 col-xs-offset-6 no-padding services_title">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-6 no-padding services_title">
               <img class="img-responsive" src="https://s3.amazonaws.com/cannedhead.bol/banner-contacto.jpg">
               <h1>Contáctenos</h1>
             </div>
           </div>
           <div class="row">
-            <div class="col-xs-10 col-xs-offset-1">
+            <div class="container">
               <div class="row">
-                <p>A continuación complete el fomulario para obtener más información sobre algún proyecto o para 
+                <p class="contactenos-hero">A continuación complete el fomulario para obtener más información sobre algún proyecto o para 
                    responder alguna pregunta.</p>                
-              </div>  
-              <div class="col-xs-6">
-                <label>Nombre</label>
-                <input type="text" name="nombre">
-                <label>Apellido</label>
-                <input type="text" name="apellido">
-                <label>Cédula</label>
-                <input type="text" name="cedula">
-                <label>Teléfono</label>
-                <input type="text" name="telefono">
-              </div>  
-              <div class="col-xs-6">
-                <label>Proyecto</label>
-                <input type="text" name="proyecto">
-                <label>Correo</label>
-                <input type="text" name="correo">
-                <label>País</label>
-                <input type="text" name="pais">
-                <label>Ciudad</label>
-                <input type="text" name="ciudad">                
               </div>
-              <div class="col-xs-12">
-                <label>Comnetarios</label>
-                <textarea rows="5"></textarea>
-              </div>            
+              <div class="row contactenos-formulario">
+                <form class="form-horizontal contactenos-form">  
+                  <div class="col-xs-6">
+                    <div class="form-group">
+                      <label for="nombre" class="col-sm-3 control-label">Nombre</label>
+                      <div class="col-sm-9">
+                        <input class="form-control" type="text" name="nombre" id="nombre">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="apellido" class="col-sm-3 control-label">Apellido</label>
+                      <div class="col-sm-9">
+                        <input class="form-control" type="text" name="apellido" id="apellido">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="cedula" class="col-sm-3 control-label">Cédula</label>
+                      <div class="col-sm-9">
+                        <input class="form-control" type="text" name="cedula" id="cedula">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="telefono" class="col-sm-3 control-label">Teléfono</label>
+                      <div class="col-sm-9">
+                        <input class="form-control" type="text" name="telefono" id="telefono">
+                      </div>
+                    </div>
+                  </div>  
+                  <div class="col-xs-6">
+                    <div class="form-group">
+                      <label for="proyecto" class="col-sm-3 control-label">Proyecto</label>
+                      <div class="col-sm-9">
+                        <input class="form-control" type="text" name="proyecto" id="proyecto">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="correo" class="col-sm-3 control-label">Correo</label>
+                      <div class="col-sm-9">
+                        <input class="form-control" type="email" name="correo" id="correo">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="pais" class="col-sm-3 control-label">País</label>
+                      <div class="col-sm-9">
+                        <input class="form-control" type="text" name="pais" id="pais">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="ciudad" class="col-sm-3 control-label">Ciudad</label>
+                      <div class="col-sm-9">
+                        <input class="form-control" type="text" name="ciudad" id="ciudad">
+                      </div>
+                    </div>               
+                  </div>
+                  <div class=" col-xs-12 form-group">
+                      <label class="col-sm-2 control-label comentarios" for="comentarios">Comentarios</label>
+                      <div class="col-sm-10 no-padding">
+                        <textarea id="comentarios" class="form-control no-padding comentarios-text" name="comentarios" rows="5"></textarea>
+                      </div>
+                  </div>   
+                  <div class="pull-right">
+                    <input class="btn btn-contact" type="submit" value="Enviar">
+                  </div>   
+                </form> 
+              </div>      
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-5">
+              P.B.X: (+57 1) <strong>4871000</strong><br>
+              Correo electrónico: <strong>info@bol.com.co</strong><br>
+              Dirección: <strong>Av. Carrera 9 No. 115-06 Of. 1203</strong><br>
+              Bogotá, D.C, Colombia
+            </div>
+            <div class="col-xs-12 col-sm-7">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Área</th>
+                    <th>Correo Electrónico</th>
+                    <th>Extension</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Secretaría Dirección</td>
+                    <td>oficina@bol.com.co</td>
+                    <td>1011</td>
+                  </tr>
+                  <tr>
+                    <td>Contratos y Maquinarias</td>
+                    <td>rentabol@bol.com.co</td>
+                    <td>1005</td>
+                  </tr>
+                  <tr>
+                    <td>Compras</td>
+                    <td>compras@bol.com.co</td>
+                    <td>1021</td>
+                  </tr>
+                  <tr>
+                    <td>Contabilidad</td>
+                    <td>contabilidad@bol.com.co</td>
+                    <td>1003</td>
+                  </tr>
+                  <tr>
+                    <td>Personal</td>
+                    <td>personal@bol.com.co</td>
+                    <td>1008</td>
+                  </tr>
+                  <tr>
+                    <td>Financiera</td>
+                    <td>financiera@bol.com.co</td>
+                    <td>1014</td>
+                  </tr>
+                  <tr>
+                    <td>Licitaciones</td>
+                    <td>licitaciones@bol.com.co</td>
+                    <td>1016</td>
+                  </tr>
+                  <tr>
+                    <td>Tesorería</td>
+                    <td>tesoreria@bol.com.co</td>
+                    <td>1003</td>
+                  </tr>
+                  <tr>
+                    <td>Programacíon</td>
+                    <td>programacíon@bol.com.co</td>
+                    <td>1024</td>
+                  </tr>
+                  <tr>
+                    <td>Recepción</td>
+                    <td>info@bol.com.co</td>
+                    <td>1006</td>
+                  </tr>
+                  <tr>
+                    <td>Subdirección</td>
+                    <td>sgi@bol.com.co</td>
+                    <td>1015</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
           <div class="row"> 
             <div class="col-xs-12 no-padding footer">
-              <p class="text-center">Todos los derechos reservados - B.O.L. 2015</p>
+              <p class="text-center">Todos los derechos reservados - B.O.L. 2016</p>
             </div>
           </div>
         </div>
@@ -94,6 +250,41 @@
         <script src="js/bootstrap.min.js"></script>
 
         <script>
+            $(document).ready(function(){                    
+              $(window).scroll(function (e) {
+                var height = $(window).height()*0.2;
+                var top = $(window).scrollTop();
+                if( top >= height ) {
+                  $('#menu-btn').addClass("fixed");
+                  $('#off-canvas-menu').addClass("fixed");                  
+                } else {
+                  $('#menu-btn').removeClass("fixed");
+                  $('#off-canvas-menu').removeClass("fixed");
+                }
+              });
+            });
+
+            $(function() {
+                $('.toggle-menu').click(function() {
+                    toggleMenu();
+                });
+            });
+
+            function toggleMenu() {
+                if ($('#off-canvas-menu').hasClass('menu-open')) { 
+                    $('#off-canvas-menu').removeClass('menu-open');
+                    $('#off-canvas-menu').addClass('menu-closed');
+                } else {                
+                    $('#off-canvas-menu').removeClass('menu-closed');
+                    $('#off-canvas-menu').addClass('menu-open');
+                }            
+            }
+
+            document.querySelector( ".toggle-btn" )
+              .addEventListener( "click", function() {
+                this.classList.toggle( "active" );
+            });
+
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
